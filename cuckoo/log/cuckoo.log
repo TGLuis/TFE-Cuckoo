@@ -1,0 +1,12 @@
+2020-03-22 16:41:58,618 [cuckoo.core.scheduler] INFO: Using "virtualbox" as machine manager
+2020-03-22 16:42:00,072 [cuckoo.core.scheduler] INFO: Loaded 1 machine/s
+2020-03-22 16:42:00,083 [cuckoo.core.scheduler] INFO: Waiting for analysis tasks.
+2020-03-22 16:42:01,169 [cuckoo.core.scheduler] INFO: Starting analysis of FILE "pafish.exe" (task #1, options "")
+2020-03-22 16:42:01,195 [cuckoo.core.scheduler] INFO: Task #1: acquired machine cuckoo1 (label=cuckoo1)
+2020-03-22 16:42:01,437 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 321 (interface=vboxnet0, host=192.168.56.2)
+2020-03-22 16:42:03,432 [cuckoo.core.guest] INFO: Starting analysis #1 on guest (id=cuckoo1, ip=192.168.56.2)
+2020-03-22 16:42:44,485 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=cuckoo1, ip=192.168.56.2)
+2020-03-22 16:44:44,709 [cuckoo.core.guest] INFO: cuckoo1: analysis completed successfully
+2020-03-22 16:44:47,848 [cuckoo.processing.baseline] INFO: Could not find a baseline report for machine 'cuckoo1', skipping it.
+2020-03-22 16:44:48,818 [cuckoo.core.scheduler] INFO: Task #1: reports generation completed
+2020-03-22 16:44:48,823 [cuckoo.core.scheduler] INFO: Task #1: analysis procedure completed

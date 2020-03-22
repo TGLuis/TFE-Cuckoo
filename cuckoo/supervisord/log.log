@@ -1,0 +1,47 @@
+2020-02-05 18:44:48,581 CRIT Set uid to user 1000
+2020-02-05 18:44:48,590 INFO RPC interface 'supervisor' initialized
+2020-02-05 18:44:48,590 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-02-05 18:44:48,590 INFO daemonizing the supervisord process
+2020-02-05 18:44:48,590 INFO supervisord started with pid 11669
+2020-02-05 18:44:49,596 INFO spawned: 'cuckoo-daemon' with pid 11670
+2020-02-05 18:44:49,601 INFO spawned: 'cuckoo-process_0' with pid 11671
+2020-02-05 18:44:49,605 INFO spawned: 'cuckoo-process_3' with pid 11672
+2020-02-05 18:44:49,609 INFO spawned: 'cuckoo-process_2' with pid 11673
+2020-02-05 18:44:49,615 INFO spawned: 'cuckoo-process_1' with pid 11674
+2020-02-05 18:44:50,617 INFO success: cuckoo-process_0 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:44:50,618 INFO success: cuckoo-process_3 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:44:50,618 INFO success: cuckoo-process_2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:44:50,618 INFO success: cuckoo-process_1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:44:53,283 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:44:54,288 INFO spawned: 'cuckoo-daemon' with pid 11724
+2020-02-05 18:44:56,467 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:44:58,474 INFO spawned: 'cuckoo-daemon' with pid 11760
+2020-02-05 18:45:00,459 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:45:03,467 INFO spawned: 'cuckoo-daemon' with pid 11787
+2020-02-05 18:45:05,676 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:45:06,678 INFO gave up: cuckoo-daemon entered FATAL state, too many start retries too quickly
+2020-02-05 18:45:47,287 INFO waiting for cuckoo-process_0 to stop
+2020-02-05 18:45:47,287 INFO waiting for cuckoo-process_3 to stop
+2020-02-05 18:45:47,287 INFO waiting for cuckoo-process_2 to stop
+2020-02-05 18:45:47,287 INFO waiting for cuckoo-process_1 to stop
+2020-02-05 18:45:47,295 INFO stopped: cuckoo-process_0 (terminated by SIGTERM)
+2020-02-05 18:45:47,295 INFO stopped: cuckoo-process_1 (terminated by SIGTERM)
+2020-02-05 18:45:47,296 INFO stopped: cuckoo-process_3 (terminated by SIGTERM)
+2020-02-05 18:45:47,296 INFO stopped: cuckoo-process_2 (terminated by SIGTERM)
+2020-02-05 18:45:54,627 INFO spawned: 'cuckoo-daemon' with pid 11855
+2020-02-05 18:45:54,629 INFO spawned: 'cuckoo-process_0' with pid 11856
+2020-02-05 18:45:54,630 INFO spawned: 'cuckoo-process_3' with pid 11857
+2020-02-05 18:45:54,632 INFO spawned: 'cuckoo-process_2' with pid 11858
+2020-02-05 18:45:54,634 INFO spawned: 'cuckoo-process_1' with pid 11859
+2020-02-05 18:45:55,635 INFO success: cuckoo-process_0 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:45:55,636 INFO success: cuckoo-process_3 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:45:55,636 INFO success: cuckoo-process_2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:45:55,636 INFO success: cuckoo-process_1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-02-05 18:45:57,391 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:45:58,396 INFO spawned: 'cuckoo-daemon' with pid 11912
+2020-02-05 18:46:00,879 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:46:02,882 INFO spawned: 'cuckoo-daemon' with pid 11938
+2020-02-05 18:46:05,344 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:46:08,352 INFO spawned: 'cuckoo-daemon' with pid 11969
+2020-02-05 18:46:10,805 INFO exited: cuckoo-daemon (exit status 1; not expected)
+2020-02-05 18:46:11,806 INFO gave up: cuckoo-daemon entered FATAL state, too many start retries too quickly

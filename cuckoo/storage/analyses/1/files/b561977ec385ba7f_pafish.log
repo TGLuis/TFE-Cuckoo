@@ -1,0 +1,14 @@
+
+[pafish] Start
+[pafish] Windows version: 6.1 build 7601
+[pafish] CPU: GenuineIntel (HV: VBoxVBoxVBox) Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+[pafish] CPU VM traced by checking the difference between CPU timestamp counters (rdtsc) forcing VM exit
+[pafish] CPU VM traced by checking hypervisor bit in cpuid feature bits
+[pafish] CPU VM traced by checking cpuid hypervisor vendor for known VM vendors
+[pafish] Sandbox traced using mouse activity
+[pafish] Sandbox traced by checking if NumberOfProcessors is less than 2 via raw access
+[pafish] Sandbox traced by checking if NumberOfProcessors is less than 2 via GetSystemInfo()
+[pafish] Hooks traced using ShellExecuteExW method 1
+[pafish] VirtualBox traced using MAC address starting with 08:00:27
+[pafish] VirtualBox device identifiers traced using WMI
+[pafish] End

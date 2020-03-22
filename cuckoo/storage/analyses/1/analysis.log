@@ -1,0 +1,22 @@
+2020-03-22 16:41:50,000 [analyzer] DEBUG: Starting analyzer from: C:\tmpvyv_1o
+2020-03-22 16:41:50,000 [analyzer] DEBUG: Pipe server name: \??\PIPE\xowZRmModNtsUcCSQgbYEFfn
+2020-03-22 16:41:50,000 [analyzer] DEBUG: Log pipe server name: \??\PIPE\SpAuKxMAuJQPOINQQjuNnvSMEvpStjLo
+2020-03-22 16:41:50,000 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.
+2020-03-22 16:41:50,000 [analyzer] INFO: Automatically selected analysis package "exe"
+2020-03-22 16:41:50,108 [analyzer] DEBUG: Started auxiliary module DbgView
+2020-03-22 16:41:50,265 [analyzer] DEBUG: Started auxiliary module Disguise
+2020-03-22 16:41:50,467 [analyzer] DEBUG: Loaded monitor into process with pid 480
+2020-03-22 16:41:50,467 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets
+2020-03-22 16:41:50,467 [analyzer] DEBUG: Started auxiliary module Human
+2020-03-22 16:41:50,467 [analyzer] DEBUG: Started auxiliary module InstallCertificate
+2020-03-22 16:41:50,467 [analyzer] DEBUG: Started auxiliary module Reboot
+2020-03-22 16:41:50,500 [analyzer] DEBUG: Started auxiliary module RecentFiles
+2020-03-22 16:41:50,500 [analyzer] DEBUG: Started auxiliary module Screenshots
+2020-03-22 16:41:50,500 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n
+2020-03-22 16:41:50,562 [lib.api.process] INFO: Successfully executed process from path u'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\pafish.exe' with arguments '' and pid 1332
+2020-03-22 16:41:50,733 [analyzer] DEBUG: Loaded monitor into process with pid 1332
+2020-03-22 16:41:50,733 [analyzer] INFO: Added new file to list with pid 1332 and path C:\Users\Administrator\AppData\Local\Temp\pafish.log
+2020-03-22 16:43:49,765 [analyzer] INFO: Analysis timeout hit, terminating analysis.
+2020-03-22 16:43:49,765 [analyzer] INFO: Terminating remaining processes before shutdown.
+2020-03-22 16:43:49,780 [lib.api.process] INFO: Successfully terminated process with pid 1332.
+2020-03-22 16:43:49,780 [analyzer] INFO: Analysis completed.

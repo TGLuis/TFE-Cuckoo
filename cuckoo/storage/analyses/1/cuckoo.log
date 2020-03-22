@@ -1,0 +1,148 @@
+2020-03-22 16:42:01,195 [cuckoo.core.scheduler] INFO: Task #1: acquired machine cuckoo1 (label=cuckoo1)
+2020-03-22 16:42:01,195 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.2 for task #1
+2020-03-22 16:42:01,196 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay
+2020-03-22 16:42:01,437 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 321 (interface=vboxnet0, host=192.168.56.2)
+2020-03-22 16:42:01,438 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer
+2020-03-22 16:42:01,478 [cuckoo.machinery.virtualbox] DEBUG: Starting vm cuckoo1
+2020-03-22 16:42:01,795 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine cuckoo1 to its current snapshot
+2020-03-22 16:42:03,432 [cuckoo.core.guest] INFO: Starting analysis #1 on guest (id=cuckoo1, ip=192.168.56.2)
+2020-03-22 16:42:04,435 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:05,446 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:06,450 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:06,503 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:08,507 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:09,511 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:10,514 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:10,567 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:12,571 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:13,575 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:14,579 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:14,631 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:16,635 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:17,639 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:18,643 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:18,695 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:20,699 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:21,703 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:22,706 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:22,759 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:24,763 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:25,767 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:26,770 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:26,823 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:28,828 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:29,831 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:30,835 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:30,887 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:32,893 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:33,896 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:34,899 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:34,951 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:36,957 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:37,965 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:38,968 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:39,015 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:41,019 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:42,023 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:43,027 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:43,080 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet
+2020-03-22 16:42:44,485 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=cuckoo1, ip=192.168.56.2)
+2020-03-22 16:42:44,533 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=cuckoo1, ip=192.168.56.2, monitor=latest, size=3884763)
+2020-03-22 16:42:44,840 [cuckoo.core.resultserver] DEBUG: Task #1: live log analysis.log initialized.
+2020-03-22 16:42:45,253 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2020-03-22 16:42:45,517 [cuckoo.core.resultserver] DEBUG: Task #1 is sending a BSON stream
+2020-03-22 16:42:46,434 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0001.jpg'
+2020-03-22 16:42:46,446 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 94551
+2020-03-22 16:42:47,510 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0002.jpg'
+2020-03-22 16:42:47,528 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 93016
+2020-03-22 16:42:49,773 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:42:54,871 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:42:59,947 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:05,005 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:10,081 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:15,153 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:20,220 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:25,292 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:30,397 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:35,489 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:40,118 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0003.jpg'
+2020-03-22 16:43:40,150 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 93328
+2020-03-22 16:43:40,583 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:41,225 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0004.jpg'
+2020-03-22 16:43:41,241 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 93008
+2020-03-22 16:43:45,675 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:50,757 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:55,629 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0005.jpg'
+2020-03-22 16:43:55,651 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 94164
+2020-03-22 16:43:55,821 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:43:56,724 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0006.jpg'
+2020-03-22 16:43:56,739 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 93012
+2020-03-22 16:44:00,869 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:05,934 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:11,067 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:16,204 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:21,411 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:26,496 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:31,568 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:36,624 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:41,673 [cuckoo.core.guest] DEBUG: cuckoo1: analysis #1 still processing
+2020-03-22 16:44:44,637 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'files/b561977ec385ba7f_pafish.log'
+2020-03-22 16:44:44,640 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 829
+2020-03-22 16:44:44,709 [cuckoo.core.guest] INFO: cuckoo1: analysis completed successfully
+2020-03-22 16:44:44,733 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay
+2020-03-22 16:44:44,776 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer
+2020-03-22 16:44:44,776 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm cuckoo1
+2020-03-22 16:44:45,047 [cuckoo.core.resultserver] DEBUG: Task #1: File upload for 'shots/0007.jpg'
+2020-03-22 16:44:45,056 [cuckoo.core.resultserver] DEBUG: Task #1 uploaded file length: 45197
+2020-03-22 16:44:46,893 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.2 for task #1
+2020-03-22 16:44:46,893 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 1
+2020-03-22 16:44:46,902 [cuckoo.core.scheduler] DEBUG: Released database task #1
+2020-03-22 16:44:46,923 [cuckoo.core.plugins] DEBUG: Executed processing module "AnalysisInfo" for task #1
+2020-03-22 16:44:47,139 [cuckoo.core.plugins] DEBUG: Executed processing module "ApkInfo" for task #1
+2020-03-22 16:44:47,170 [cuckoo.core.plugins] DEBUG: Executed processing module "BehaviorAnalysis" for task #1
+2020-03-22 16:44:47,170 [cuckoo.core.plugins] DEBUG: Executed processing module "Droidmon" for task #1
+2020-03-22 16:44:47,179 [cuckoo.core.plugins] DEBUG: Executed processing module "Dropped" for task #1
+2020-03-22 16:44:47,179 [cuckoo.core.plugins] DEBUG: Executed processing module "DroppedBuffer" for task #1
+2020-03-22 16:44:47,181 [cuckoo.core.plugins] DEBUG: Executed processing module "MetaInfo" for task #1
+2020-03-22 16:44:47,181 [cuckoo.core.plugins] DEBUG: Executed processing module "ProcessMemory" for task #1
+2020-03-22 16:44:47,181 [cuckoo.core.plugins] DEBUG: Executed processing module "Procmon" for task #1
+2020-03-22 16:44:47,456 [cuckoo.core.plugins] DEBUG: Executed processing module "Screenshots" for task #1
+2020-03-22 16:44:47,838 [cuckoo.core.plugins] DEBUG: Executed processing module "Static" for task #1
+2020-03-22 16:44:47,843 [cuckoo.core.plugins] DEBUG: Executed processing module "Strings" for task #1
+2020-03-22 16:44:47,847 [cuckoo.core.plugins] DEBUG: Executed processing module "TargetInfo" for task #1
+2020-03-22 16:44:47,848 [cuckoo.processing.baseline] INFO: Could not find a baseline report for machine 'cuckoo1', skipping it.
+2020-03-22 16:44:47,848 [cuckoo.core.plugins] DEBUG: Executed processing module "Baseline" for task #1
+2020-03-22 16:44:48,044 [cuckoo.core.plugins] DEBUG: Executed processing module "NetworkAnalysis" for task #1
+2020-03-22 16:44:48,474 [cuckoo.core.plugins] DEBUG: Executed processing module "VirusTotal" for task #1
+2020-03-22 16:44:48,476 [cuckoo.core.plugins] DEBUG: Executed processing module "Extracted" for task #1
+2020-03-22 16:44:48,478 [cuckoo.core.plugins] DEBUG: Executed processing module "TLSMasterSecrets" for task #1
+2020-03-22 16:44:48,487 [cuckoo.core.plugins] DEBUG: Executed processing module "Debug" for task #1
+2020-03-22 16:44:48,515 [cuckoo.core.plugins] DEBUG: Running 542 signatures
+2020-03-22 16:44:48,677 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antisandbox_file
+2020-03-22 16:44:48,677 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_generic_bios
+2020-03-22 16:44:48,677 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_queries_computername
+2020-03-22 16:44:48,677 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_disk_size
+2020-03-22 16:44:48,677 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_shared_device
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: checks_debugger
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: console_output
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: recon_fingerprint
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: has_wmi
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: injection_process_search
+2020-03-22 16:44:48,678 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivirus_virustotal
+2020-03-22 16:44:48,679 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_memory_available
+2020-03-22 16:44:48,679 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_network_adapters
+2020-03-22 16:44:48,679 [cuckoo.core.plugins] DEBUG: Analysis matched signature: packer_entropy
+2020-03-22 16:44:48,679 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antisandbox_joe_anubis_files
+2020-03-22 16:44:48,679 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vbox_devices
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vbox_files
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vbox_keys
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vbox_provname
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vbox_window
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vmware_files
+2020-03-22 16:44:48,680 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antivm_vmware_keys
+2020-03-22 16:44:48,681 [cuckoo.core.plugins] DEBUG: Analysis matched signature: antiemu_wine
+2020-03-22 16:44:48,681 [cuckoo.core.plugins] DEBUG: Analysis matched signature: wmi_antivm
+2020-03-22 16:44:48,760 [cuckoo.core.plugins] DEBUG: Executed reporting module "JsonDump"
+2020-03-22 16:44:48,817 [cuckoo.core.plugins] DEBUG: Executed reporting module "SingleFile"
+2020-03-22 16:44:48,818 [cuckoo.core.scheduler] INFO: Task #1: reports generation completed
+2020-03-22 16:44:48,823 [cuckoo.core.scheduler] INFO: Task #1: analysis procedure completed
