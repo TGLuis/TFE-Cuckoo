@@ -3,7 +3,12 @@ Repository containing files to execute Cuckoo in Docker
 
 ## Setup
 to install and to build the image
+
 ./docker\_setup.sh
+
+mkdir vms
+
+download the VM cuckoo1.ova [here](https://drive.google.com/file/d/14KGly4m6KVI7ayDd7qvUIF1WLRr8VdVo/view?usp=sharing)
 
 ## Create container
 to create the container
