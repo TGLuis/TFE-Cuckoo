@@ -10,3 +10,16 @@
 2020-03-22 16:44:47,848 [cuckoo.processing.baseline] INFO: Could not find a baseline report for machine 'cuckoo1', skipping it.
 2020-03-22 16:44:48,818 [cuckoo.core.scheduler] INFO: Task #1: reports generation completed
 2020-03-22 16:44:48,823 [cuckoo.core.scheduler] INFO: Task #1: analysis procedure completed
+2020-03-22 16:56:10,454 [cuckoo.core.scheduler] INFO: Using "virtualbox" as machine manager
+2020-03-22 16:56:14,304 [cuckoo.core.scheduler] INFO: Loaded 1 machine/s
+2020-03-22 16:56:14,335 [cuckoo.core.scheduler] INFO: Waiting for analysis tasks.
+2020-03-22 16:56:15,594 [cuckoo.core.scheduler] INFO: Starting analysis of FILE "pafish.exe" (task #2, options "")
+2020-03-22 16:56:15,708 [cuckoo.core.scheduler] INFO: Task #2: acquired machine cuckoo1 (label=cuckoo1)
+2020-03-22 16:56:16,398 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 290 (interface=vboxnet0, host=192.168.56.2)
+2020-03-22 16:56:21,956 [cuckoo.core.guest] INFO: Starting analysis #2 on guest (id=cuckoo1, ip=192.168.56.2)
+2020-03-22 16:59:22,288 [cuckoo.core.scheduler] ERROR: Error from machine 'cuckoo1': it appears that this Virtual Machine hasn't been configured properly as the Cuckoo Host wasn't able to connect to the Guest. There could be a few reasons for this, please refer to our documentation on the matter: https://cuckoo.sh/docs/faq/index.html#troubleshooting-vm-network-configuration
+2020-03-22 16:59:26,665 [cuckoo.processing.behavior] WARNING: Analysis results folder does not contain any behavior log files.
+2020-03-22 16:59:27,328 [cuckoo.processing.baseline] INFO: Could not find a baseline report for machine 'cuckoo1', skipping it.
+2020-03-22 16:59:28,332 [cuckoo.processing.debug] ERROR: Error processing task #2: it appears that the Virtual Machine hasn't been able to contact back to the Cuckoo Host. There could be a few reasons for this, please refer to our documentation on the matter: https://cuckoo.sh/docs/faq/index.html#troubleshooting-vm-network-configuration
+2020-03-22 16:59:28,714 [cuckoo.core.scheduler] INFO: Task #2: reports generation completed
+2020-03-22 16:59:28,724 [cuckoo.core.scheduler] INFO: Task #2: analysis procedure completed

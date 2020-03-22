@@ -1,0 +1,2610 @@
+{
+    "info": {
+        "added": 1584896162.109283, 
+        "started": 1584896175.387811, 
+        "duration": 190, 
+        "ended": 1584896365.875283, 
+        "owner": null, 
+        "score": 1.4, 
+        "id": 2, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": null, 
+        "machine": {
+            "status": "stopped", 
+            "name": "cuckoo1", 
+            "label": "cuckoo1", 
+            "manager": "VirtualBox", 
+            "started_on": "2020-03-22 16:56:16", 
+            "shutdown_on": "2020-03-22 16:59:25"
+        }, 
+        "platform": null, 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "The binary likely contains encrypted or compressed data indicative of a packer", 
+            "severity": 2, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 2, 
+            "references": [
+                "http://www.forensickb.com/2013/03/file-entropy-explained.html", 
+                "http://virii.es/U/Using%20Entropy%20Analysis%20to%20Find%20Encrypted%20and%20Packed%20Malware.pdf"
+            ], 
+            "marks": [
+                {
+                    "entropy": 7.854124193008595, 
+                    "section": {
+                        "size_of_data": "0x00009000", 
+                        "virtual_address": "0x0000f000", 
+                        "entropy": 7.854124193008595, 
+                        "name": ".rsrc", 
+                        "virtual_size": "0x00008ef0"
+                    }, 
+                    "type": "generic", 
+                    "description": "A section with a high entropy has been found"
+                }, 
+                {
+                    "entropy": 0.4864864864864865, 
+                    "type": "generic", 
+                    "description": "Overall entropy of this PE file is high"
+                }
+            ], 
+            "name": "packer_entropy"
+        }, 
+        {
+            "families": [], 
+            "description": "File has been identified by 39 AntiVirus engines on VirusTotal as malicious", 
+            "severity": 5, 
+            "ttp": {}, 
+            "markcount": 39, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "Qihoo-360", 
+                    "ioc": "Win32/Trojan.0dd", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Cylance", 
+                    "ioc": "Unsafe", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Zillya", 
+                    "ioc": "Trojan.Khalesi.Win32.1493", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "AegisLab", 
+                    "ioc": "Trojan.Win32.Khalesi.4!c", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Sangfor", 
+                    "ioc": "Malware", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "K7AntiVirus", 
+                    "ioc": "Unwanted-Program ( 004d38111 )", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "K7GW", 
+                    "ioc": "Unwanted-Program ( 004d38111 )", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Invincea", 
+                    "ioc": "heuristic", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Cyren", 
+                    "ioc": "W32/Maskit.A.gen!Eldorado", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "ESET-NOD32", 
+                    "ioc": "a variant of Win32/ParanoidFish.A potentially unsafe", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Paloalto", 
+                    "ioc": "generic.ml", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Kaspersky", 
+                    "ioc": "Trojan.Win32.Khalesi.oq", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Alibaba", 
+                    "ioc": "Trojan:Win32/Khalesi.9e4b014c", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "NANO-Antivirus", 
+                    "ioc": "Trojan.Win32.Khalesi.fdxhjb", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "SUPERAntiSpyware", 
+                    "ioc": "Trojan.Agent/Gen-ParanoidFish", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Tencent", 
+                    "ioc": "Win32.Trojan.Khalesi.Hquz", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "VIPRE", 
+                    "ioc": "Trojan.Win32.Generic!BT", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Trapmine", 
+                    "ioc": "malicious.high.ml.score", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Sophos", 
+                    "ioc": "Troj/AutoG-DV", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "APEX", 
+                    "ioc": "Malicious", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "F-Prot", 
+                    "ioc": "W32/Maskit.A.gen!Eldorado", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Jiangmin", 
+                    "ioc": "Trojan.Khalesi.as", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Webroot", 
+                    "ioc": "W32.Trojan.Gen", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "MAX", 
+                    "ioc": "malware (ai score=63)", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Endgame", 
+                    "ioc": "malicious (high confidence)", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "ViRobot", 
+                    "ioc": "Trojan.Win32.Z.Khalesi.76800", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "ZoneAlarm", 
+                    "ioc": "Trojan.Win32.Khalesi.oq", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "AhnLab-V3", 
+                    "ioc": "PUP/Win32.ParanoidFish.R289290", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "VBA32", 
+                    "ioc": "BScope.Trojan.Khalesi", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "ALYac", 
+                    "ioc": "Trojan.Khalesi.gen", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "TACHYON", 
+                    "ioc": "Trojan/W32.Khalesi.76800", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Malwarebytes", 
+                    "ioc": "RiskWare.ParanoidFish", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Rising", 
+                    "ioc": "Trojan.Khalesi!8.F103 (CLOUD)", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Yandex", 
+                    "ioc": "Trojan.Khalesi!", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Ikarus", 
+                    "ioc": "Trojan.Win32.Khalesi", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Fortinet", 
+                    "ioc": "W32/Fareit.A", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "AVG", 
+                    "ioc": "FileRepMalware [PUP]", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "Avast", 
+                    "ioc": "FileRepMalware [PUP]", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "MaxSecure", 
+                    "ioc": "Trojan.Malware.11782770.susgen", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "antivirus_virustotal"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [
+                {
+                    "meta": {
+                        "description": "Possibly employs anti-virtualization techniques", 
+                        "author": "nex"
+                    }, 
+                    "name": "vmdetect", 
+                    "offsets": {
+                        "virtualbox6": [
+                            [
+                                29546, 
+                                10
+                            ], 
+                            [
+                                29804, 
+                                10
+                            ]
+                        ], 
+                        "virtualbox5": [
+                            [
+                                29422, 
+                                9
+                            ], 
+                            [
+                                29760, 
+                                9
+                            ]
+                        ], 
+                        "virtualbox4": [
+                            [
+                                29462, 
+                                8
+                            ], 
+                            [
+                                29716, 
+                                8
+                            ]
+                        ], 
+                        "virtualbox3": [
+                            [
+                                26784, 
+                                12
+                            ], 
+                            [
+                                26813, 
+                                12
+                            ], 
+                            [
+                                26953, 
+                                20
+                            ], 
+                            [
+                                30348, 
+                                20
+                            ], 
+                            [
+                                30539, 
+                                12
+                            ], 
+                            [
+                                30560, 
+                                12
+                            ], 
+                            [
+                                30606, 
+                                12
+                            ], 
+                            [
+                                30627, 
+                                12
+                            ], 
+                            [
+                                30736, 
+                                20
+                            ], 
+                            [
+                                30776, 
+                                20
+                            ]
+                        ], 
+                        "virtualbox2": [
+                            [
+                                26936, 
+                                19
+                            ], 
+                            [
+                                29502, 
+                                11
+                            ], 
+                            [
+                                30312, 
+                                19
+                            ], 
+                            [
+                                30669, 
+                                19
+                            ], 
+                            [
+                                30712, 
+                                19
+                            ]
+                        ], 
+                        "virtualbox1": [
+                            [
+                                29956, 
+                                18
+                            ]
+                        ], 
+                        "xen6": [
+                            [
+                                31924, 
+                                13
+                            ], 
+                            [
+                                31930, 
+                                13
+                            ]
+                        ], 
+                        "virtualbox_mac_1b": [
+                            [
+                                26674, 
+                                4
+                            ], 
+                            [
+                                26724, 
+                                4
+                            ]
+                        ], 
+                        "vmware_mac_4b": [
+                            [
+                                27698, 
+                                2
+                            ], 
+                            [
+                                27780, 
+                                2
+                            ]
+                        ], 
+                        "vmware_mac_3b": [
+                            [
+                                27688, 
+                                1
+                            ], 
+                            [
+                                27770, 
+                                1
+                            ]
+                        ], 
+                        "vmware24": [
+                            [
+                                27051, 
+                                5
+                            ], 
+                            [
+                                27071, 
+                                16
+                            ], 
+                            [
+                                27080, 
+                                7
+                            ], 
+                            [
+                                27276, 
+                                5
+                            ], 
+                            [
+                                27318, 
+                                5
+                            ], 
+                            [
+                                27331, 
+                                5
+                            ], 
+                            [
+                                27367, 
+                                5
+                            ], 
+                            [
+                                27380, 
+                                5
+                            ], 
+                            [
+                                27396, 
+                                5
+                            ], 
+                            [
+                                27516, 
+                                5
+                            ], 
+                            [
+                                27632, 
+                                5
+                            ], 
+                            [
+                                27804, 
+                                5
+                            ], 
+                            [
+                                27884, 
+                                5
+                            ], 
+                            [
+                                27936, 
+                                5
+                            ], 
+                            [
+                                31132, 
+                                6
+                            ], 
+                            [
+                                31401, 
+                                5
+                            ], 
+                            [
+                                31414, 
+                                5
+                            ], 
+                            [
+                                31523, 
+                                5
+                            ], 
+                            [
+                                31548, 
+                                7
+                            ], 
+                            [
+                                31911, 
+                                5
+                            ], 
+                            [
+                                31917, 
+                                5
+                            ]
+                        ], 
+                        "vmware_mac_1b": [
+                            [
+                                27678, 
+                                0
+                            ], 
+                            [
+                                27760, 
+                                0
+                            ]
+                        ], 
+                        "vmware20": [
+                            [
+                                27449, 
+                                17
+                            ], 
+                            [
+                                27504, 
+                                17
+                            ], 
+                            [
+                                31456, 
+                                17
+                            ]
+                        ], 
+                        "vmware5": [
+                            [
+                                27570, 
+                                15
+                            ], 
+                            [
+                                27621, 
+                                15
+                            ], 
+                            [
+                                31497, 
+                                15
+                            ]
+                        ], 
+                        "vmware4": [
+                            [
+                                27571, 
+                                14
+                            ], 
+                            [
+                                27622, 
+                                14
+                            ], 
+                            [
+                                31498, 
+                                14
+                            ]
+                        ], 
+                        "vmware_mac_2b": [
+                            [
+                                27710, 
+                                3
+                            ], 
+                            [
+                                27792, 
+                                3
+                            ]
+                        ]
+                    }, 
+                    "strings": [
+                        "MDA6MDU6Njk=", 
+                        "MDA6MEM6Mjk=", 
+                        "MDA6MUM6MTQ=", 
+                        "MDA6NTA6NTY=", 
+                        "MDg6MDA6Mjc=", 
+                        "Vk13YXJl", 
+                        "Vk1XQVJF", 
+                        "Vk1XYXJl", 
+                        "VkJveE1vdXNl", 
+                        "VkJveEd1ZXN0", 
+                        "VkJveFNG", 
+                        "VkJveFNlcnZpY2U=", 
+                        "VkJveFRyYXk=", 
+                        "WGVuVk1N", 
+                        "aGdmcy5zeXM=", 
+                        "bWhnZnMuc3lz", 
+                        "dm13YXJl", 
+                        "dm1tb3VzZQ==", 
+                        "dmJveGhvb2suZGxs", 
+                        "dmJveHNlcnZpY2U=", 
+                        "dmJveHRyYXk="
+                    ]
+                }
+            ], 
+            "sha1": "124f46228d1e220d88ae5e9a24d6e713039a64f9", 
+            "name": "pafish.exe", 
+            "type": "PE32 executable (console) Intel 80386 (stripped to external PDB), for MS Windows", 
+            "sha256": "2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5", 
+            "urls": [], 
+            "crc32": "6F030481", 
+            "path": "/root/.cuckoo/storage/binaries/2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5", 
+            "ssdeep": "1536:tI05L48IVDAQVzZpJyrOM1GhFNkYL2BxNRj:tI05LBIDAuztyrOMGTkrNRj", 
+            "size": 76800, 
+            "sha512": "4b6d56b81dd3cd42bb53fc8d68b5c8ef0d6c85ebcc503cd042ae5c19e8965e6477f259a02bafb9c5c66956ae1023fc30e3be5bbcd526eacc8480f93d74c1ab7c", 
+            "md5": "9159edb64c4a21d8888d088bf2db23f3"
+        }
+    }, 
+    "virustotal": {
+        "scans": {
+            "Bkav": {
+                "detected": false, 
+                "version": "1.3.0.9899", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "MicroWorld-eScan": {
+                "detected": false, 
+                "version": "14.0.409.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "CMC": {
+                "detected": false, 
+                "version": "1.1.0.977", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20190321"
+            }, 
+            "CAT-QuickHeal": {
+                "detected": false, 
+                "version": "14.00", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Qihoo-360": {
+                "detected": true, 
+                "version": "1.0.0.1120", 
+                "result": "Win32/Trojan.0dd", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "McAfee": {
+                "detected": false, 
+                "version": "6.0.6.653", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Cylance": {
+                "detected": true, 
+                "version": "2.3.1.101", 
+                "result": "Unsafe", 
+                "normalized": [
+                    "Unsafe"
+                ], 
+                "update": "20200304"
+            }, 
+            "Zillya": {
+                "detected": true, 
+                "version": "2.0.0.4042", 
+                "result": "Trojan.Khalesi.Win32.1493", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "AegisLab": {
+                "detected": true, 
+                "version": "4.2", 
+                "result": "Trojan.Win32.Khalesi.4!c", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Sangfor": {
+                "detected": true, 
+                "version": "1.0", 
+                "result": "Malware", 
+                "normalized": [], 
+                "update": "20200228"
+            }, 
+            "K7AntiVirus": {
+                "detected": true, 
+                "version": "11.96.33439", 
+                "result": "Unwanted-Program ( 004d38111 )", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "BitDefender": {
+                "detected": false, 
+                "version": "7.2", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "K7GW": {
+                "detected": true, 
+                "version": "11.96.33437", 
+                "result": "Unwanted-Program ( 004d38111 )", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Cybereason": {
+                "detected": false, 
+                "version": "1.2.449", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20190616"
+            }, 
+            "Invincea": {
+                "detected": true, 
+                "version": "6.3.6.26157", 
+                "result": "heuristic", 
+                "normalized": [], 
+                "update": "20200219"
+            }, 
+            "BitDefenderTheta": {
+                "detected": false, 
+                "version": "7.2.37796.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200301"
+            }, 
+            "Cyren": {
+                "detected": true, 
+                "version": "6.2.2.2", 
+                "result": "W32/Maskit.A.gen!Eldorado", 
+                "normalized": [
+                    "Maskit", 
+                    "Eldorado"
+                ], 
+                "update": "20200304"
+            }, 
+            "Symantec": {
+                "detected": false, 
+                "version": "1.11.0.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "ESET-NOD32": {
+                "detected": true, 
+                "version": "20943", 
+                "result": "a variant of Win32/ParanoidFish.A potentially unsafe", 
+                "normalized": [
+                    "ParanoidFish", 
+                    "A potentially unsafe"
+                ], 
+                "update": "20200304"
+            }, 
+            "Baidu": {
+                "detected": false, 
+                "version": "1.0.0.2", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20190318"
+            }, 
+            "TrendMicro-HouseCall": {
+                "detected": false, 
+                "version": "10.0.0.1040", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Paloalto": {
+                "detected": true, 
+                "version": "1.0", 
+                "result": "generic.ml", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "ClamAV": {
+                "detected": false, 
+                "version": "0.102.2.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Kaspersky": {
+                "detected": true, 
+                "version": "15.0.1.13", 
+                "result": "Trojan.Win32.Khalesi.oq", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Alibaba": {
+                "detected": true, 
+                "version": "0.3.0.5", 
+                "result": "Trojan:Win32/Khalesi.9e4b014c", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20190527"
+            }, 
+            "NANO-Antivirus": {
+                "detected": true, 
+                "version": "1.0.134.25032", 
+                "result": "Trojan.Win32.Khalesi.fdxhjb", 
+                "normalized": [
+                    "Khalesi", 
+                    "fdxhjb"
+                ], 
+                "update": "20200304"
+            }, 
+            "SUPERAntiSpyware": {
+                "detected": true, 
+                "version": "5.6.0.1032", 
+                "result": "Trojan.Agent/Gen-ParanoidFish", 
+                "normalized": [
+                    "ParanoidFish"
+                ], 
+                "update": "20200228"
+            }, 
+            "Tencent": {
+                "detected": true, 
+                "version": "1.0.0.1", 
+                "result": "Win32.Trojan.Khalesi.Hquz", 
+                "normalized": [
+                    "Khalesi", 
+                    "Hquz"
+                ], 
+                "update": "20200304"
+            }, 
+            "Ad-Aware": {
+                "detected": false, 
+                "version": "3.0.5.370", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Emsisoft": {
+                "detected": false, 
+                "version": "2018.12.0.1641", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Comodo": {
+                "detected": false, 
+                "version": "32161", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "F-Secure": {
+                "detected": false, 
+                "version": "12.0.86.52", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "DrWeb": {
+                "detected": false, 
+                "version": "7.0.44.12030", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "VIPRE": {
+                "detected": true, 
+                "version": "81992", 
+                "result": "Trojan.Win32.Generic!BT", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "TrendMicro": {
+                "detected": false, 
+                "version": "11.0.0.1006", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "McAfee-GW-Edition": {
+                "detected": false, 
+                "version": "v2017.3010", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Trapmine": {
+                "detected": true, 
+                "version": "3.2.22.914", 
+                "result": "malicious.high.ml.score", 
+                "normalized": [
+                    "malicious", 
+                    "high", 
+                    "score"
+                ], 
+                "update": "20200123"
+            }, 
+            "FireEye": {
+                "detected": false, 
+                "version": "29.7.0.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Sophos": {
+                "detected": true, 
+                "version": "4.98.0", 
+                "result": "Troj/AutoG-DV", 
+                "normalized": [
+                    "AutoG"
+                ], 
+                "update": "20200304"
+            }, 
+            "APEX": {
+                "detected": true, 
+                "version": "5.125", 
+                "result": "Malicious", 
+                "normalized": [
+                    "Malicious"
+                ], 
+                "update": "20200304"
+            }, 
+            "F-Prot": {
+                "detected": true, 
+                "version": "4.7.1.166", 
+                "result": "W32/Maskit.A.gen!Eldorado", 
+                "normalized": [
+                    "Maskit", 
+                    "Eldorado"
+                ], 
+                "update": "20200304"
+            }, 
+            "Jiangmin": {
+                "detected": true, 
+                "version": "16.0.100", 
+                "result": "Trojan.Khalesi.as", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Webroot": {
+                "detected": true, 
+                "version": "1.0.0.403", 
+                "result": "W32.Trojan.Gen", 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Avira": {
+                "detected": false, 
+                "version": "8.3.3.8", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "MAX": {
+                "detected": true, 
+                "version": "2019.9.16.1", 
+                "result": "malware (ai score=63)", 
+                "normalized": [
+                    "ai score=63"
+                ], 
+                "update": "20200304"
+            }, 
+            "Antiy-AVL": {
+                "detected": false, 
+                "version": "3.0.0.1", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Kingsoft": {
+                "detected": false, 
+                "version": "2013.8.14.323", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Microsoft": {
+                "detected": false, 
+                "version": "1.1.16800.2", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Endgame": {
+                "detected": true, 
+                "version": "3.0.17", 
+                "result": "malicious (high confidence)", 
+                "normalized": [
+                    "malicious", 
+                    "high confidence"
+                ], 
+                "update": "20200226"
+            }, 
+            "Arcabit": {
+                "detected": false, 
+                "version": "1.0.0.870", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "ViRobot": {
+                "detected": true, 
+                "version": "2014.3.20.0", 
+                "result": "Trojan.Win32.Z.Khalesi.76800", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "ZoneAlarm": {
+                "detected": true, 
+                "version": "1.0", 
+                "result": "Trojan.Win32.Khalesi.oq", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Avast-Mobile": {
+                "detected": false, 
+                "version": "200304-00", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "GData": {
+                "detected": false, 
+                "version": "A:25.25057B:26.17895", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "SentinelOne": {
+                "detected": false, 
+                "version": "2.0.0.2603", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200220"
+            }, 
+            "AhnLab-V3": {
+                "detected": true, 
+                "version": "3.17.2.26758", 
+                "result": "PUP/Win32.ParanoidFish.R289290", 
+                "normalized": [
+                    "ParanoidFish", 
+                    "R289290"
+                ], 
+                "update": "20200304"
+            }, 
+            "Acronis": {
+                "detected": false, 
+                "version": "1.1.1.73", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "VBA32": {
+                "detected": true, 
+                "version": "4.3.0", 
+                "result": "BScope.Trojan.Khalesi", 
+                "normalized": [
+                    "BScope", 
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "ALYac": {
+                "detected": true, 
+                "version": "1.1.1.5", 
+                "result": "Trojan.Khalesi.gen", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "TACHYON": {
+                "detected": true, 
+                "version": "2020-03-04.02", 
+                "result": "Trojan/W32.Khalesi.76800", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Malwarebytes": {
+                "detected": true, 
+                "version": "3.6.4.335", 
+                "result": "RiskWare.ParanoidFish", 
+                "normalized": [
+                    "ParanoidFish"
+                ], 
+                "update": "20200304"
+            }, 
+            "Panda": {
+                "detected": false, 
+                "version": "4.6.4.2", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Zoner": {
+                "detected": false, 
+                "version": "1.0.0.1", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Rising": {
+                "detected": true, 
+                "version": "25.0.0.24", 
+                "result": "Trojan.Khalesi!8.F103 (CLOUD)", 
+                "normalized": [
+                    "Khalesi", 
+                    "CLOUD"
+                ], 
+                "update": "20200304"
+            }, 
+            "Yandex": {
+                "detected": true, 
+                "version": "5.5.2.24", 
+                "result": "Trojan.Khalesi!", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "Ikarus": {
+                "detected": true, 
+                "version": "0.1.5.2", 
+                "result": "Trojan.Win32.Khalesi", 
+                "normalized": [
+                    "Khalesi"
+                ], 
+                "update": "20200304"
+            }, 
+            "eGambit": {
+                "detected": false, 
+                "version": null, 
+                "result": null, 
+                "normalized": [], 
+                "update": "20200304"
+            }, 
+            "Fortinet": {
+                "detected": true, 
+                "version": "6.2.142.0", 
+                "result": "W32/Fareit.A", 
+                "normalized": [
+                    "Fareit"
+                ], 
+                "update": "20200304"
+            }, 
+            "AVG": {
+                "detected": true, 
+                "version": "18.4.3895.0", 
+                "result": "FileRepMalware [PUP]", 
+                "normalized": [
+                    "FileRepMalware"
+                ], 
+                "update": "20200304"
+            }, 
+            "Avast": {
+                "detected": true, 
+                "version": "18.4.3895.0", 
+                "result": "FileRepMalware [PUP]", 
+                "normalized": [
+                    "FileRepMalware"
+                ], 
+                "update": "20200304"
+            }, 
+            "CrowdStrike": {
+                "detected": false, 
+                "version": "1.0", 
+                "result": null, 
+                "normalized": [], 
+                "update": "20190702"
+            }, 
+            "MaxSecure": {
+                "detected": true, 
+                "version": "1.0.0.1", 
+                "result": "Trojan.Malware.11782770.susgen", 
+                "normalized": [
+                    "susgen"
+                ], 
+                "update": "20200304"
+            }
+        }, 
+        "scan_id": "2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5-1583354391", 
+        "sha1": "124f46228d1e220d88ae5e9a24d6e713039a64f9", 
+        "resource": "9159edb64c4a21d8888d088bf2db23f3", 
+        "response_code": 1, 
+        "scan_date": "2020-03-04 20:39:51", 
+        "permalink": "https://www.virustotal.com/file/2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5/analysis/1583354391/", 
+        "summary": {
+            "positives": 39, 
+            "permalink": "https://www.virustotal.com/file/2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5/analysis/1583354391/", 
+            "scan_date": "2020-03-04 20:39:51"
+        }, 
+        "sha256": "2180f4a13add5e346e8cf6994876a9d2f5eac3fcb695db8569537010d24cd6d5", 
+        "normalized": [
+            "Unsafe", 
+            "Khalesi", 
+            "Maskit", 
+            "Eldorado", 
+            "ParanoidFish", 
+            "A potentially unsafe", 
+            "fdxhjb", 
+            "Hquz", 
+            "malicious", 
+            "high", 
+            "score", 
+            "AutoG", 
+            "ai score=63", 
+            "high confidence", 
+            "R289290", 
+            "BScope", 
+            "CLOUD", 
+            "Fareit", 
+            "FileRepMalware", 
+            "susgen"
+        ], 
+        "total": 72, 
+        "positives": 39, 
+        "verbose_msg": "Scan finished, information embedded", 
+        "md5": "9159edb64c4a21d8888d088bf2db23f3"
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [], 
+        "dns_servers": [], 
+        "http": [], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [], 
+        "pcap_sha256": "0475320b9a8501e91abe69bf97ef7544be115d015c092f0e36b14861d31843c2", 
+        "dns": [], 
+        "http_ex": [], 
+        "domains": [], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "c7bb93bd78c168d5698a662b55564e3473055b86b378cdf47d60c99bdd2a73bb", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": null, 
+        "pe_imports": [
+            {
+                "imports": [
+                    {
+                        "name": "GetUserNameA", 
+                        "address": "0x40c2a8"
+                    }, 
+                    {
+                        "name": "RegCloseKey", 
+                        "address": "0x40c2ac"
+                    }, 
+                    {
+                        "name": "RegOpenKeyExA", 
+                        "address": "0x40c2b0"
+                    }, 
+                    {
+                        "name": "RegQueryValueExA", 
+                        "address": "0x40c2b4"
+                    }
+                ], 
+                "dll": "ADVAPI32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "GetAdaptersAddresses", 
+                        "address": "0x40c2bc"
+                    }
+                ], 
+                "dll": "IPHLPAPI.DLL"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "CloseHandle", 
+                        "address": "0x40c2c4"
+                    }, 
+                    {
+                        "name": "CreateFileA", 
+                        "address": "0x40c2c8"
+                    }, 
+                    {
+                        "name": "CreateProcessA", 
+                        "address": "0x40c2cc"
+                    }, 
+                    {
+                        "name": "CreateToolhelp32Snapshot", 
+                        "address": "0x40c2d0"
+                    }, 
+                    {
+                        "name": "DeleteCriticalSection", 
+                        "address": "0x40c2d4"
+                    }, 
+                    {
+                        "name": "DeleteFileW", 
+                        "address": "0x40c2d8"
+                    }, 
+                    {
+                        "name": "DeviceIoControl", 
+                        "address": "0x40c2dc"
+                    }, 
+                    {
+                        "name": "EnterCriticalSection", 
+                        "address": "0x40c2e0"
+                    }, 
+                    {
+                        "name": "GetConsoleScreenBufferInfo", 
+                        "address": "0x40c2e4"
+                    }, 
+                    {
+                        "name": "GetCurrentProcess", 
+                        "address": "0x40c2e8"
+                    }, 
+                    {
+                        "name": "GetCurrentProcessId", 
+                        "address": "0x40c2ec"
+                    }, 
+                    {
+                        "name": "GetCurrentThreadId", 
+                        "address": "0x40c2f0"
+                    }, 
+                    {
+                        "name": "GetDiskFreeSpaceExA", 
+                        "address": "0x40c2f4"
+                    }, 
+                    {
+                        "name": "GetDriveTypeA", 
+                        "address": "0x40c2f8"
+                    }, 
+                    {
+                        "name": "GetFileAttributesA", 
+                        "address": "0x40c2fc"
+                    }, 
+                    {
+                        "name": "GetLastError", 
+                        "address": "0x40c300"
+                    }, 
+                    {
+                        "name": "GetLogicalDriveStringsA", 
+                        "address": "0x40c304"
+                    }, 
+                    {
+                        "name": "GetModuleFileNameA", 
+                        "address": "0x40c308"
+                    }, 
+                    {
+                        "name": "GetModuleHandleA", 
+                        "address": "0x40c30c"
+                    }, 
+                    {
+                        "name": "GetProcAddress", 
+                        "address": "0x40c310"
+                    }, 
+                    {
+                        "name": "GetStartupInfoA", 
+                        "address": "0x40c314"
+                    }, 
+                    {
+                        "name": "GetStdHandle", 
+                        "address": "0x40c318"
+                    }, 
+                    {
+                        "name": "GetSystemInfo", 
+                        "address": "0x40c31c"
+                    }, 
+                    {
+                        "name": "GetSystemTimeAsFileTime", 
+                        "address": "0x40c320"
+                    }, 
+                    {
+                        "name": "GetTickCount", 
+                        "address": "0x40c324"
+                    }, 
+                    {
+                        "name": "GetVersionExA", 
+                        "address": "0x40c328"
+                    }, 
+                    {
+                        "name": "GlobalMemoryStatusEx", 
+                        "address": "0x40c32c"
+                    }, 
+                    {
+                        "name": "InitializeCriticalSection", 
+                        "address": "0x40c330"
+                    }, 
+                    {
+                        "name": "IsDebuggerPresent", 
+                        "address": "0x40c334"
+                    }, 
+                    {
+                        "name": "LeaveCriticalSection", 
+                        "address": "0x40c338"
+                    }, 
+                    {
+                        "name": "LocalAlloc", 
+                        "address": "0x40c33c"
+                    }, 
+                    {
+                        "name": "LocalFree", 
+                        "address": "0x40c340"
+                    }, 
+                    {
+                        "name": "OutputDebugStringA", 
+                        "address": "0x40c344"
+                    }, 
+                    {
+                        "name": "Process32First", 
+                        "address": "0x40c348"
+                    }, 
+                    {
+                        "name": "Process32Next", 
+                        "address": "0x40c34c"
+                    }, 
+                    {
+                        "name": "QueryPerformanceCounter", 
+                        "address": "0x40c350"
+                    }, 
+                    {
+                        "name": "SetConsoleTextAttribute", 
+                        "address": "0x40c354"
+                    }, 
+                    {
+                        "name": "SetLastError", 
+                        "address": "0x40c358"
+                    }, 
+                    {
+                        "name": "SetUnhandledExceptionFilter", 
+                        "address": "0x40c35c"
+                    }, 
+                    {
+                        "name": "Sleep", 
+                        "address": "0x40c360"
+                    }, 
+                    {
+                        "name": "TerminateProcess", 
+                        "address": "0x40c364"
+                    }, 
+                    {
+                        "name": "TlsGetValue", 
+                        "address": "0x40c368"
+                    }, 
+                    {
+                        "name": "UnhandledExceptionFilter", 
+                        "address": "0x40c36c"
+                    }, 
+                    {
+                        "name": "VirtualProtect", 
+                        "address": "0x40c370"
+                    }, 
+                    {
+                        "name": "VirtualQuery", 
+                        "address": "0x40c374"
+                    }, 
+                    {
+                        "name": "lstrcmpiA", 
+                        "address": "0x40c378"
+                    }
+                ], 
+                "dll": "KERNEL32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "WNetGetProviderNameA", 
+                        "address": "0x40c380"
+                    }
+                ], 
+                "dll": "MPR.DLL"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "__dllonexit", 
+                        "address": "0x40c388"
+                    }, 
+                    {
+                        "name": "__getmainargs", 
+                        "address": "0x40c38c"
+                    }, 
+                    {
+                        "name": "__initenv", 
+                        "address": "0x40c390"
+                    }, 
+                    {
+                        "name": "__lconv_init", 
+                        "address": "0x40c394"
+                    }, 
+                    {
+                        "name": "__set_app_type", 
+                        "address": "0x40c398"
+                    }, 
+                    {
+                        "name": "__setusermatherr", 
+                        "address": "0x40c39c"
+                    }, 
+                    {
+                        "name": "_acmdln", 
+                        "address": "0x40c3a0"
+                    }, 
+                    {
+                        "name": "_amsg_exit", 
+                        "address": "0x40c3a4"
+                    }, 
+                    {
+                        "name": "_cexit", 
+                        "address": "0x40c3a8"
+                    }, 
+                    {
+                        "name": "_fmode", 
+                        "address": "0x40c3ac"
+                    }, 
+                    {
+                        "name": "_initterm", 
+                        "address": "0x40c3b0"
+                    }, 
+                    {
+                        "name": "_iob", 
+                        "address": "0x40c3b4"
+                    }, 
+                    {
+                        "name": "_lock", 
+                        "address": "0x40c3b8"
+                    }, 
+                    {
+                        "name": "_onexit", 
+                        "address": "0x40c3bc"
+                    }, 
+                    {
+                        "name": "calloc", 
+                        "address": "0x40c3c0"
+                    }, 
+                    {
+                        "name": "exit", 
+                        "address": "0x40c3c4"
+                    }, 
+                    {
+                        "name": "fclose", 
+                        "address": "0x40c3c8"
+                    }, 
+                    {
+                        "name": "fopen", 
+                        "address": "0x40c3cc"
+                    }, 
+                    {
+                        "name": "fprintf", 
+                        "address": "0x40c3d0"
+                    }, 
+                    {
+                        "name": "fputs", 
+                        "address": "0x40c3d4"
+                    }, 
+                    {
+                        "name": "free", 
+                        "address": "0x40c3d8"
+                    }, 
+                    {
+                        "name": "fwrite", 
+                        "address": "0x40c3dc"
+                    }, 
+                    {
+                        "name": "getchar", 
+                        "address": "0x40c3e0"
+                    }, 
+                    {
+                        "name": "malloc", 
+                        "address": "0x40c3e4"
+                    }, 
+                    {
+                        "name": "mbstowcs", 
+                        "address": "0x40c3e8"
+                    }, 
+                    {
+                        "name": "memcmp", 
+                        "address": "0x40c3ec"
+                    }, 
+                    {
+                        "name": "memcpy", 
+                        "address": "0x40c3f0"
+                    }, 
+                    {
+                        "name": "printf", 
+                        "address": "0x40c3f4"
+                    }, 
+                    {
+                        "name": "puts", 
+                        "address": "0x40c3f8"
+                    }, 
+                    {
+                        "name": "signal", 
+                        "address": "0x40c3fc"
+                    }, 
+                    {
+                        "name": "sprintf", 
+                        "address": "0x40c400"
+                    }, 
+                    {
+                        "name": "strlen", 
+                        "address": "0x40c404"
+                    }, 
+                    {
+                        "name": "strncat", 
+                        "address": "0x40c408"
+                    }, 
+                    {
+                        "name": "strncmp", 
+                        "address": "0x40c40c"
+                    }, 
+                    {
+                        "name": "strncpy", 
+                        "address": "0x40c410"
+                    }, 
+                    {
+                        "name": "strstr", 
+                        "address": "0x40c414"
+                    }, 
+                    {
+                        "name": "_unlock", 
+                        "address": "0x40c418"
+                    }, 
+                    {
+                        "name": "abort", 
+                        "address": "0x40c41c"
+                    }, 
+                    {
+                        "name": "toupper", 
+                        "address": "0x40c420"
+                    }, 
+                    {
+                        "name": "vfprintf", 
+                        "address": "0x40c424"
+                    }, 
+                    {
+                        "name": "wcsstr", 
+                        "address": "0x40c428"
+                    }, 
+                    {
+                        "name": "_vsnprintf", 
+                        "address": "0x40c42c"
+                    }
+                ], 
+                "dll": "msvcrt.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "CoCreateInstance", 
+                        "address": "0x40c434"
+                    }, 
+                    {
+                        "name": "CoInitializeEx", 
+                        "address": "0x40c438"
+                    }, 
+                    {
+                        "name": "CoInitializeSecurity", 
+                        "address": "0x40c43c"
+                    }, 
+                    {
+                        "name": "CoUninitialize", 
+                        "address": "0x40c440"
+                    }
+                ], 
+                "dll": "ole32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "SysAllocString", 
+                        "address": "0x40c448"
+                    }, 
+                    {
+                        "name": "SysFreeString", 
+                        "address": "0x40c44c"
+                    }
+                ], 
+                "dll": "OLEAUT32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "ShellExecuteExW", 
+                        "address": "0x40c454"
+                    }
+                ], 
+                "dll": "SHELL32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "FindWindowA", 
+                        "address": "0x40c45c"
+                    }, 
+                    {
+                        "name": "GetCursorPos", 
+                        "address": "0x40c460"
+                    }
+                ], 
+                "dll": "USER32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "freeaddrinfo", 
+                        "address": "0x40c468"
+                    }, 
+                    {
+                        "name": "getaddrinfo", 
+                        "address": "0x40c46c"
+                    }
+                ], 
+                "dll": "WS2_32.dll"
+            }
+        ], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2016-08-27 11:37:13", 
+        "pe_exports": [], 
+        "imported_dll_count": 10, 
+        "pe_imphash": "5fd4caa76ea3c961f2d530674634f64d", 
+        "pe_resources": [
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017a10", 
+                "size": "0x000001f1"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017c08", 
+                "size": "0x0000005a"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00017c68", 
+                "size": "0x00000288"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": ""
+            }, 
+            {
+                "name": "InternalName", 
+                "value": ""
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": ""
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": ""
+            }, 
+            {
+                "name": "LegalTrademarks", 
+                "value": ""
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "Paranoid Fish"
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": ""
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "Paranoid Fish is paranoid"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": ""
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0409 0x04e4"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x00005000", 
+                "virtual_address": "0x00001000", 
+                "entropy": 5.837356922279207, 
+                "name": ".text", 
+                "virtual_size": "0x00004f04"
+            }, 
+            {
+                "size_of_data": "0x00000200", 
+                "virtual_address": "0x00006000", 
+                "entropy": 0.5160853718179212, 
+                "name": ".data", 
+                "virtual_size": "0x00000030"
+            }, 
+            {
+                "size_of_data": "0x00003400", 
+                "virtual_address": "0x00007000", 
+                "entropy": 5.841272613826215, 
+                "name": ".rdata", 
+                "virtual_size": "0x000032b8"
+            }, 
+            {
+                "size_of_data": "0x00000000", 
+                "virtual_address": "0x0000b000", 
+                "entropy": 0.0, 
+                "name": ".bss", 
+                "virtual_size": "0x00000400"
+            }, 
+            {
+                "size_of_data": "0x00000e00", 
+                "virtual_address": "0x0000c000", 
+                "entropy": 4.764537139404206, 
+                "name": ".idata", 
+                "virtual_size": "0x00000d24"
+            }, 
+            {
+                "size_of_data": "0x00000200", 
+                "virtual_address": "0x0000d000", 
+                "entropy": 0.2672080280062829, 
+                "name": ".CRT", 
+                "virtual_size": "0x00000034"
+            }, 
+            {
+                "size_of_data": "0x00000200", 
+                "virtual_address": "0x0000e000", 
+                "entropy": 0.2044881574398449, 
+                "name": ".tls", 
+                "virtual_size": "0x00000020"
+            }, 
+            {
+                "size_of_data": "0x00009000", 
+                "virtual_address": "0x0000f000", 
+                "entropy": 7.854124193008595, 
+                "name": ".rsrc", 
+                "virtual_size": "0x00008ef0"
+            }
+        ]
+    }, 
+    "debug": {
+        "action": [
+            "vmrouting"
+        ], 
+        "dbgview": [], 
+        "errors": [
+            "Error from machine 'cuckoo1': it appears that this Virtual Machine hasn't been configured properly as the Cuckoo Host wasn't able to connect to the Guest. There could be a few reasons for this, please refer to our documentation on the matter: https://cuckoo.sh/docs/faq/index.html#troubleshooting-vm-network-configuration", 
+            "Error processing task #2: it appears that the Virtual Machine hasn't been able to contact back to the Cuckoo Host. There could be a few reasons for this, please refer to our documentation on the matter: https://cuckoo.sh/docs/faq/index.html#troubleshooting-vm-network-configuration"
+        ], 
+        "log": [], 
+        "cuckoo": [
+            "2020-03-22 16:56:15,708 [cuckoo.core.scheduler] INFO: Task #2: acquired machine cuckoo1 (label=cuckoo1)\n", 
+            "2020-03-22 16:56:15,709 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.2 for task #2\n", 
+            "2020-03-22 16:56:15,710 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay\n", 
+            "2020-03-22 16:56:16,398 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 290 (interface=vboxnet0, host=192.168.56.2)\n", 
+            "2020-03-22 16:56:16,400 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer\n", 
+            "2020-03-22 16:56:16,510 [cuckoo.machinery.virtualbox] DEBUG: Starting vm cuckoo1\n", 
+            "2020-03-22 16:56:17,439 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine cuckoo1 to its current snapshot\n", 
+            "2020-03-22 16:56:21,956 [cuckoo.core.guest] INFO: Starting analysis #2 on guest (id=cuckoo1, ip=192.168.56.2)\n", 
+            "2020-03-22 16:56:22,963 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:23,968 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:24,026 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:26,032 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:27,037 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:28,026 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:30,034 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:31,039 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:32,026 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:34,033 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:35,038 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:36,043 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:36,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:38,066 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:39,071 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:40,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:42,065 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:43,070 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:44,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:46,064 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:47,070 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:48,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:50,064 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:51,069 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:52,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:54,065 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:55,071 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:56,058 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:58,064 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:56:59,068 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:00,073 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:00,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:02,096 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:03,101 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:04,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:06,097 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:07,102 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:08,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:10,096 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:11,102 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:12,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:14,097 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:15,102 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:16,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:18,097 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:19,103 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:20,090 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:22,097 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:23,103 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:24,109 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:24,122 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:26,128 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:27,133 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:28,122 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:30,128 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:31,133 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:32,122 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:34,128 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:35,133 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:36,122 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:38,129 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:39,135 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:40,122 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:42,129 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:43,134 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:44,123 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:46,129 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:47,135 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:48,140 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:48,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:50,160 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:51,167 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:52,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:54,162 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:55,167 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:56,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:58,160 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:57:59,165 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:00,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:02,253 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:03,260 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:04,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:06,160 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:07,166 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:08,154 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:10,161 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:11,166 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:12,171 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:12,186 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:14,192 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:15,197 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:16,186 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:18,193 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:19,199 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:20,186 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:22,192 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:23,197 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:24,186 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:26,191 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:27,196 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:28,186 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:30,192 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:31,197 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:32,202 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:32,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:34,224 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:35,229 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:36,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:38,224 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:39,229 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:40,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:42,224 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:43,229 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:44,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:46,224 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:47,229 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:48,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:50,223 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:51,228 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:52,218 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:54,224 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:55,229 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:56,234 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:56,250 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:58,256 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:58:59,262 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:00,250 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:02,256 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:03,261 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:04,250 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:06,256 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:07,262 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:08,250 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:10,258 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:11,264 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:12,250 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:14,256 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:15,260 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:16,264 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:16,282 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:18,288 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:19,294 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:20,282 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:22,287 [cuckoo.core.guest] DEBUG: cuckoo1: not ready yet\n", 
+            "2020-03-22 16:59:22,288 [cuckoo.core.scheduler] ERROR: Error from machine 'cuckoo1': it appears that this Virtual Machine hasn't been configured properly as the Cuckoo Host wasn't able to connect to the Guest. There could be a few reasons for this, please refer to our documentation on the matter: https://cuckoo.sh/docs/faq/index.html#troubleshooting-vm-network-configuration\n", 
+            "2020-03-22 16:59:22,319 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay\n", 
+            "2020-03-22 16:59:22,359 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer\n", 
+            "2020-03-22 16:59:22,359 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm cuckoo1\n", 
+            "2020-03-22 16:59:25,822 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.2 for task #2\n", 
+            "2020-03-22 16:59:25,846 [cuckoo.core.scheduler] DEBUG: Released database tas"
+        ]
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "P`.data", 
+        ".rdata", 
+        "0@.bss", 
+        ".idata", 
+        "libgcj-16.dll", 
+        "_Jv_RegisterClasses", 
+        "analysis-start", 
+        "%lu.%lu build %lu", 
+        "[*] Windows version: %s", 
+        "[*] CPU: %s", 
+        "    Hypervisor: %s", 
+        "    CPU brand: %s", 
+        "Windows version: %s", 
+        "CPU: %s (HV: %s) %s", 
+        "CPU: %s %s", 
+        "Debuggers detection", 
+        "hi_debugger_isdebuggerpresent", 
+        "Debugger traced using IsDebuggerPresent()", 
+        "Using IsDebuggerPresent()", 
+        "hi_debugger_outputdebugstring", 
+        "Debugger traced using OutputDebugString()", 
+        "Using OutputDebugString()", 
+        "CPU information based detections", 
+        "hi_CPU_VM_rdtsc", 
+        "CPU VM traced by checking the difference between CPU timestamp counters (rdtsc)", 
+        "Checking the difference between CPU timestamp counters (rdtsc)", 
+        "hi_CPU_VM_rdtsc_force_vm_exit", 
+        "CPU VM traced by checking the difference between CPU timestamp counters (rdtsc) forcing VM exit", 
+        "Checking the difference between CPU timestamp counters (rdtsc) forcing VM exit", 
+        "hi_CPU_VM_hypervisor_bit", 
+        "CPU VM traced by checking hypervisor bit in cpuid feature bits", 
+        "Checking hypervisor bit in cpuid feature bits", 
+        "hi_CPU_VM_hv_vendor_name", 
+        "CPU VM traced by checking cpuid hypervisor vendor for known VM vendors", 
+        "Checking cpuid hypervisor vendor for known VM vendors", 
+        "Generic sandbox detection", 
+        "hi_sandbox_mouse_act", 
+        "Sandbox traced using mouse activity", 
+        "Using mouse activity", 
+        "hi_sandbox_username", 
+        "Sandbox traced by checking username", 
+        "Checking username", 
+        "hi_sandbox_path", 
+        "Sandbox traced by checking file path", 
+        "Checking file path", 
+        "hi_sandbox_common_names", 
+        "Sandbox traced by checking common sample names in drives root", 
+        "Checking common sample names in drives root", 
+        "hi_sandbox_drive_size", 
+        "Sandbox traced by checking disk size <= 60GB via DeviceIoControl()", 
+        "Checking if disk size <= 60GB via DeviceIoControl()", 
+        "hi_sandbox_drive_size2", 
+        "Sandbox traced by checking disk size <= 60GB via GetDiskFreeSpaceExA()", 
+        "Checking if disk size <= 60GB via GetDiskFreeSpaceExA()", 
+        "hi_sandbox_sleep_gettickcount", 
+        "Sandbox traced by checking if Sleep() was patched using GetTickCount()", 
+        "Checking if Sleep() is patched using GetTickCount()", 
+        "hi_sandbox_NumberOfProcessors_less_2_raw", 
+        "Sandbox traced by checking if NumberOfProcessors is less than 2 via raw access", 
+        "Checking if NumberOfProcessors is < 2 via raw access", 
+        "hi_sandbox_NumberOfProcessors_less_2_GetSystemInfo", 
+        "Sandbox traced by checking if NumberOfProcessors is less than 2 via GetSystemInfo()", 
+        "Checking if NumberOfProcessors is < 2 via GetSystemInfo()", 
+        "hi_sandbox_pysicalmemory_less_1Gb", 
+        "Sandbox traced by checking if pysical memory is less than 1Gb", 
+        "Checking if pysical memory is < 1Gb", 
+        "hi_sandbox_uptime", 
+        "Sandbox traced by checking operating system uptime using GetTickCount()", 
+        "Checking operating system uptime using GetTickCount()", 
+        "hi_sandbox_IsNativeVhdBoot", 
+        "Sandbox traced by checking IsNativeVhdBoot()", 
+        "Checking if operating system IsNativeVhdBoot()", 
+        "Hooks detection", 
+        "hi_hooks_shellexecuteexw_m1", 
+        "Hooks traced using ShellExecuteExW method 1", 
+        "Checking function ShellExecuteExW method 1", 
+        "hi_hooks_createprocessa_m1", 
+        "Hooks traced using CreateProcessA method 1", 
+        "Checking function CreateProcessA method 1", 
+        "Sandboxie detection", 
+        "hi_sandboxie", 
+        "Sandboxie traced using GetModuleHandle(sbiedll.dll)", 
+        "Using GetModuleHandle(sbiedll.dll)", 
+        "Wine detection", 
+        "hi_wine", 
+        "Wine traced using GetProcAddress(wine_get_unix_file_name) from kernel32.dll", 
+        "Using GetProcAddress(wine_get_unix_file_name) from kernel32.dll", 
+        "Wine traced using Reg key HKCU\\SOFTWARE\\Wine", 
+        "Reg key (HKCU\\SOFTWARE\\Wine)", 
+        "VirtualBox detection", 
+        "hi_virtualbox", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0 \"Identifier\"", 
+        "Scsi port->bus->target id->logical unit id-> 0 identifier", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\Description\\System \"SystemBiosVersion\"", 
+        "Reg key (HKLM\\HARDWARE\\Description\\System \"SystemBiosVersion\")", 
+        "VirtualBox traced using Reg key HKLM\\SOFTWARE\\Oracle\\VirtualBox Guest Additions", 
+        "Reg key (HKLM\\SOFTWARE\\Oracle\\VirtualBox Guest Additions)", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\Description\\System \"VideoBiosVersion\"", 
+        "Reg key (HKLM\\HARDWARE\\Description\\System \"VideoBiosVersion\")", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\ACPI\\DSDT\\VBOX__", 
+        "Reg key (HKLM\\HARDWARE\\ACPI\\DSDT\\VBOX__)", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\ACPI\\FADT\\VBOX__", 
+        "Reg key (HKLM\\HARDWARE\\ACPI\\FADT\\VBOX__)", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\ACPI\\RSDT\\VBOX__", 
+        "Reg key (HKLM\\HARDWARE\\ACPI\\RSDT\\VBOX__)", 
+        "Reg key (HKLM\\SYSTEM\\ControlSet001\\Services\\VBox*)", 
+        "VirtualBox traced using Reg key HKLM\\HARDWARE\\DESCRIPTION\\System \"SystemBiosDate\"", 
+        "Reg key (HKLM\\HARDWARE\\DESCRIPTION\\System \"SystemBiosDate\")", 
+        "Driver files in C:\\WINDOWS\\system32\\drivers\\VBox*", 
+        "Additional system files", 
+        "VirtualBox traced using MAC address starting with 08:00:27", 
+        "Looking for a MAC address starting with 08:00:27", 
+        "Looking for pseudo devices", 
+        "VirtualBox traced using VBoxTray windows", 
+        "Looking for VBoxTray windows", 
+        "VirtualBox traced using its network share", 
+        "Looking for VBox network share", 
+        "Looking for VBox processes (vboxservice.exe, vboxtray.exe)", 
+        "VirtualBox device identifiers traced using WMI", 
+        "Looking for VBox devices using WMI", 
+        "VMware detection", 
+        "hi_vmware", 
+        "VMWare traced using Reg key HKLM\\HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0,1,2\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0 \"Identifier\"", 
+        "Scsi port 0,1,2 ->bus->target id->logical unit id-> 0 identifier", 
+        "VMware traced using Reg key HKLM\\SOFTWARE\\VMware, Inc.\\VMware Tools", 
+        "Reg key (HKLM\\SOFTWARE\\VMware, Inc.\\VMware Tools)", 
+        "VMware traced using file C:\\WINDOWS\\system32\\drivers\\vmmouse.sys", 
+        "Looking for C:\\WINDOWS\\system32\\drivers\\vmmouse.sys", 
+        "VMware traced using file C:\\WINDOWS\\system32\\drivers\\vmhgfs.sys", 
+        "Looking for C:\\WINDOWS\\system32\\drivers\\vmhgfs.sys", 
+        "VMware traced using MAC address starting with 00:05:69, 00:0C:29, 00:1C:14 or 00:50:56", 
+        "Looking for a MAC address starting with 00:05:69, 00:0C:29, 00:1C:14 or 00:50:56", 
+        "VMware traced using network adapter name", 
+        "Looking for network adapter name", 
+        "VMware serial number traced using WMI", 
+        "Looking for VMware serial number", 
+        "Qemu detection", 
+        "hi_qemu", 
+        "Qemu traced using Reg key HKLM\\HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0 \"Identifier\"", 
+        "Qemu traced using Reg key HKLM\\HARDWARE\\Description\\System \"SystemBiosVersion\"", 
+        "Qemu traced using CPU brand string 'QEMU Virtual CPU'", 
+        "cpuid CPU brand string 'QEMU Virtual CPU'", 
+        "Bochs detection", 
+        "hi_bochs", 
+        "Bochs traced using Reg key HKLM\\HARDWARE\\Description\\System \"SystemBiosVersion\"", 
+        "Bochs traced using CPU AMD wrong value for processor name", 
+        "cpuid AMD wrong value for processor name", 
+        "Bochs traced using CPU Intel wrong value for processor name", 
+        "cpuid Intel wrong value for processor name", 
+        "Cuckoo detection", 
+        "hi_cuckoo", 
+        "Cuckoo hooks information structure traced in the TLS", 
+        "Looking in the TLS for the hooks information structure", 
+        "[-] Feel free to RE me, check log file for more information.", 
+        "analysis-end", 
+        "* Pafish (", 
+        "Paranoid fish", 
+        "Some anti(debugger/VM/sandbox) tricks", 
+        "used by malware for the general public.", 
+        "traced!", 
+        "[pafish] %s", 
+        "pafish.log", 
+        "[-] %s", 
+        "[*] %s ... ", 
+        "kernel32", 
+        "Wow64DisableWow64FsRedirection", 
+        "Wow64RevertWow64FsRedirection", 
+        "IsWow64Process", 
+        "useless", 
+        "sbiedll.dll", 
+        "Identifier", 
+        "HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0", 
+        "SystemBiosVersion", 
+        "HARDWARE\\Description\\System", 
+        "SOFTWARE\\Oracle\\VirtualBox Guest Additions", 
+        "VIRTUALBOX", 
+        "VideoBiosVersion", 
+        "HARDWARE\\ACPI\\DSDT\\VBOX__", 
+        "HARDWARE\\ACPI\\FADT\\VBOX__", 
+        "HARDWARE\\ACPI\\RSDT\\VBOX__", 
+        "SYSTEM\\ControlSet001\\Services\\VBoxGuest", 
+        "SYSTEM\\ControlSet001\\Services\\VBoxMouse", 
+        "SYSTEM\\ControlSet001\\Services\\VBoxService", 
+        "SYSTEM\\ControlSet001\\Services\\VBoxSF", 
+        "SYSTEM\\ControlSet001\\Services\\VBoxVideo", 
+        "VirtualBox traced using Reg key HKLM\\%s", 
+        "06/23/99", 
+        "SystemBiosDate", 
+        "HARDWARE\\DESCRIPTION\\System", 
+        "C:\\WINDOWS\\system32\\drivers\\VBoxMouse.sys", 
+        "C:\\WINDOWS\\system32\\drivers\\VBoxGuest.sys", 
+        "C:\\WINDOWS\\system32\\drivers\\VBoxSF.sys", 
+        "C:\\WINDOWS\\system32\\drivers\\VBoxVideo.sys", 
+        "VirtualBox traced using driver file %s", 
+        "C:\\WINDOWS\\system32\\vboxdisp.dll", 
+        "C:\\WINDOWS\\system32\\vboxhook.dll", 
+        "C:\\WINDOWS\\system32\\vboxmrxnp.dll", 
+        "C:\\WINDOWS\\system32\\vboxogl.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglarrayspu.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglcrutil.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglerrorspu.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglfeedbackspu.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglpackspu.dll", 
+        "C:\\WINDOWS\\system32\\vboxoglpassthroughspu.dll", 
+        "C:\\WINDOWS\\system32\\vboxservice.exe", 
+        "C:\\WINDOWS\\system32\\vboxtray.exe", 
+        "C:\\WINDOWS\\system32\\VBoxControl.exe", 
+        "C:\\program files\\oracle\\virtualbox guest additions\\", 
+        "VirtualBox traced using system file %s", 
+        "\\\\.\\VBoxMiniRdrDN", 
+        "\\\\.\\pipe\\VBoxMiniRdDN", 
+        "\\\\.\\VBoxTrayIPC", 
+        "\\\\.\\pipe\\VBoxTrayIPC", 
+        "VirtualBox traced using device %s", 
+        "VBoxTrayToolWndClass", 
+        "VBoxTrayToolWnd", 
+        "VirtualBox Shared Folders", 
+        "vboxservice.exe", 
+        "VirtualBox traced using vboxservice.exe process", 
+        "vboxtray.exe", 
+        "VirtualBox traced using vboxtray.exe process", 
+        "SANDBOX", 
+        "MALWARE", 
+        "\\SAMPLE", 
+        "\\VIRUS", 
+        "%ssample.exe", 
+        "%smalware.exe", 
+        "\\\\.\\PhysicalDrive0", 
+        "kernel32", 
+        "IsNativeVhdBoot", 
+        "kernel32.dll", 
+        "wine_get_unix_file_name", 
+        "SOFTWARE\\Wine", 
+        "VMWARE", 
+        "Identifier", 
+        "HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0", 
+        "HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 1\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0", 
+        "HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 2\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0", 
+        "SOFTWARE\\VMware, Inc.\\VMware Tools", 
+        "C:\\WINDOWS\\system32\\drivers\\vmmouse.sys", 
+        "C:\\WINDOWS\\system32\\drivers\\vmhgfs.sys", 
+        "VMware", 
+        "\\\\.\\HGFS", 
+        "\\\\.\\vmci", 
+        "VMWare traced using device %s", 
+        "Identifier", 
+        "HARDWARE\\DEVICEMAP\\Scsi\\Scsi Port 0\\Scsi Bus 0\\Target Id 0\\Logical Unit Id 0", 
+        "SystemBiosVersion", 
+        "HARDWARE\\Description\\System", 
+        "QEMU Virtual CPU", 
+        "%c%c%c%c", 
+        "KVMKVMKVM", 
+        "Microsoft Hv", 
+        "VMwareVMware", 
+        "XenVMMXenVMM", 
+        "prl hyperv  ", 
+        "VBoxVBoxVBox", 
+        "SystemBiosVersion", 
+        "HARDWARE\\Description\\System", 
+        "AMD Athlon(tm) processor", 
+        "              Intel(R) Pentium(R) 4 CPU        ", 
+        "Unknown error", 
+        "_matherr(): %s in %s(%g, %g)  (retval=%g)", 
+        "Argument domain error (DOMAIN)", 
+        "Argument singularity (SIGN)", 
+        "Overflow range error (OVERFLOW)", 
+        "The result is too small to be represented (UNDERFLOW)", 
+        "Total loss of significance (TLOSS)", 
+        "Partial loss of significance (PLOSS)", 
+        "Mingw-w64 runtime failure:", 
+        "Address %p has no image-section", 
+        "  VirtualQuery failed for %d bytes at address %p", 
+        "  VirtualProtect failed with code 0x%x", 
+        "  Unknown pseudo relocation protocol version %d.", 
+        "  Unknown pseudo relocation bit size %d.", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 5.4.0 20160609", 
+        "GCC: (GNU) 6.1.1 20160815", 
+        "GetUserNameA", 
+        "RegCloseKey", 
+        "RegOpenKeyExA", 
+        "RegQueryValueExA", 
+        "GetAdaptersAddresses", 
+        "CloseHandle", 
+        "CreateFileA", 
+        "CreateProcessA", 
+        "CreateToolhelp32Snapshot", 
+        "DeleteCriticalSection", 
+        "DeleteFileW", 
+        "DeviceIoControl", 
+        "EnterCriticalSection", 
+        "GetConsoleScreenBufferInfo", 
+        "GetCurrentProcess", 
+        "GetCurrentProcessId", 
+        "GetCurrentThreadId", 
+        "GetDiskFreeSpaceExA", 
+        "GetDriveTypeA", 
+        "GetFileAttributesA", 
+        "GetLastError", 
+        "GetLogicalDriveStringsA", 
+        "GetModuleFileNameA", 
+        "GetModuleHandleA", 
+        "GetProcAddress", 
+        "GetStartupInfoA", 
+        "GetStdHandle", 
+        "GetSystemInfo", 
+        "GetSystemTimeAsFileTime", 
+        "GetTickCount", 
+        "GetVersionExA", 
+        "GlobalMemoryStatusEx", 
+        "InitializeCriticalSection", 
+        "IsDebuggerPresent", 
+        "LeaveCriticalSection", 
+        "LocalAlloc", 
+        "LocalFree", 
+        "OutputDebugStringA", 
+        "Process32First", 
+        "Process32Next", 
+        "QueryPerformanceCounter", 
+        "SetConsoleTextAttribute", 
+        "SetLastError", 
+        "SetUnhandledExceptionFilter", 
+        "TerminateProcess", 
+        "TlsGetValue", 
+        "UnhandledExceptionFilter", 
+        "VirtualProtect", 
+        "VirtualQuery", 
+        "lstrcmpiA", 
+        "WNetGetProviderNameA", 
+        "__dllonexit", 
+        "__getmainargs", 
+        "__initenv", 
+        "__lconv_init", 
+        "__set_app_type", 
+        "__setusermatherr", 
+        "_acmdln", 
+        "_amsg_exit", 
+        "_cexit", 
+        "_fmode", 
+        "_initterm", 
+        "_onexit", 
+        "calloc", 
+        "fclose", 
+        "fprintf", 
+        "fwrite", 
+        "getchar", 
+        "malloc", 
+        "mbstowcs", 
+        "memcmp", 
+        "memcpy", 
+        "printf", 
+        "signal", 
+        "sprintf", 
+        "strlen", 
+        "strncat", 
+        "strncmp", 
+        "strncpy", 
+        "strstr", 
+        "_unlock", 
+        "toupper", 
+        "vfprintf", 
+        "wcsstr", 
+        "_vsnprintf", 
+        "CoCreateInstance", 
+        "CoInitializeEx", 
+        "CoInitializeSecurity", 
+        "CoUninitialize", 
+        "SysAllocString", 
+        "SysFreeString", 
+        "ShellExecuteExW", 
+        "FindWindowA", 
+        "GetCursorPos", 
+        "freeaddrinfo", 
+        "getaddrinfo", 
+        "ADVAPI32.dll", 
+        "IPHLPAPI.DLL", 
+        "KERNEL32.dll", 
+        "MPR.DLL", 
+        "msvcrt.dll", 
+        "ole32.dll", 
+        "OLEAUT32.dll", 
+        "SHELL32.dll", 
+        "USER32.dll", 
+        "WS2_32.dll", 
+        "'R,4B:", 
+        "s)%0;7", 
+        " &0V/(z", 
+        "yn<^272S", 
+        "=BS{U\\", 
+        "Zz;7rv", 
+        "hAn`5u", 
+        "x&\u001f\u001f.^", 
+        "^RzDd!", 
+        "\\jab|,", 
+        "`(,?QZ", 
+        "<w~<O*f", 
+        "xT U9-^", 
+        "ZbeJK_", 
+        "9h'  a", 
+        "sySumI", 
+        "w05v4;", 
+        "{M=VYD", 
+        "\u001fXwyyd1S", 
+        "E>`b|,", 
+        "nmjN]~", 
+        "G`WcI=", 
+        ">tX~ /", 
+        "?^Gi[E", 
+        "xa2W DO", 
+        "cp(e|:", 
+        "/NdoCT)", 
+        "*J`,WF", 
+        "qAt/n-", 
+        "hkibXy7", 
+        "S&wv+b+", 
+        "eIDATh", 
+        "R^A)o/", 
+        "1=yDXG p", 
+        "sIDATX", 
+        "/ffclFae&", 
+        "gx|OP\u001fxFu", 
+        "!Eh,*d", 
+        "gq*Kb9", 
+        "JBG%`d", 
+        "DeviceId", 
+        "PCI\\VEN_80EE&DEV_CAFE", 
+        "root\\cimv2", 
+        "SELECT DeviceId FROM Win32_PnPEntity", 
+        "sSerialNumber", 
+        "VMware", 
+        "root\\cimv2", 
+        "SELECT SerialNumber FROM Win32_Bios", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040904E4", 
+        "CompanyName", 
+        "FileVersion", 
+        "FileDescription", 
+        "Paranoid Fish is paranoid", 
+        "InternalName", 
+        "LegalCopyright", 
+        "LegalTrademarks", 
+        "OriginalFilename", 
+        "ProductName", 
+        "Paranoid Fish", 
+        "ProductVersion", 
+        "VarFileInfo", 
+        "Translation"
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "0475320b9a8501e91abe69bf97ef7544be115d015c092f0e36b14861d31843c2", 
+                "dirname": ""
+            }
+        }
+    }
+}
